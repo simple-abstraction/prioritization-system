@@ -32,7 +32,6 @@ While the Worksheets should mostly stay the same across instances, column widths
 For best practice, Lock the priority worksheets to ensure that only the source is edited. 		
         
 ### Next Steps		
-. Fill out products A, B, C, etc with more unique examples. Use Product XYZ to have a 0% and a 100% for each priority list, anchoring the data bars. Then refresh the data and make sure it all looks clean and useful.		
-. Additionally, write full github readme with detailed info.
-. Add .bas file for VBA and .gitattributes if needed
-. Create the clean, final version that can be downloaded and used at any time in the future		
+. Fill out products A, B, C, etc with more unique examples. Use Product XYZ to have a 0% and a 100% for each priority list, anchoring the data bars. Then practice refreshing the data and make sure it all looks clean. 	
+. Additionally, write full github readme with detailed info. Include sections on "How to use" and "how to add priorities/people/products.
+. Create the clean, final version with matching repo/documentation so that it can be downloaded and used at any time in the future		
