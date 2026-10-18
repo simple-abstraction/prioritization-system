@@ -3,22 +3,49 @@
 ### Welcome! 		
 
 This workbook has been built and configured so that it can be easily downloaded, customized, and launched for any given team or workplace environment where there are projects to manage across both people and products. 		
+
+Example: Product Template 
+<img src="./images/prioritization_project_image_product_xyz_template"
+
         
 ### Structure & Guidelines		
 
 Each product has its own worksheet with associated work items (e.g. Product A, Product B, Product C). All new product worksheets should be copied from the Product Template to maintain structure and formatting. 
 
-In addition to each Product sheet, there are also multiple Priority/Staging sheets that can be configured. These lists are downstream from the Product lists and show filtered compilations of work items, which for example could be marked as a Priority or assigned to a specific person. These sheets are governed by power query automations that reference specific flags on work items across all of the Product sheets.
+Example: Product A
+<img src="./images/prioritization_project_image_product_A"
 
-For example, Analyst 1 might be working on 4 projects across 3 different products. If all of their work items are marked with the Flag '1' (or any other symbol), they can all be populated in their own individual list. 	
+Example: Product B
+<img src="./images/prioritization_project_image_product_B"
 
-As many or as few of these lists can be created as needed. They should all follow the same template, but will all need to be configured via Power Query automation. 	
+Example: Product C
+<img src="./images/prioritization_project_image_product_C"
 
-Please note that users should NOT edit the work items in the Priority/Staging lists, as the list of work items within each Product sheet is the real source of truth, whereas Priority/Staging lists are compilations from those lists. 
+
+In addition to each Product's home sheet, there are also multiple Priority/Staging sheets that can be configured. These lists are downstream from the Product lists and show filtered compilations of work items, which for example could be marked as a Priority or assigned to a specific person. These sheets are governed by power query automations that reference specific flags on work items across all of the Product sheets.
+
+Example: Top Priorities (!)
+<img src="./images/prioritization_project_image_top_priorities_tab"
+
+Example: Staging (.)
+<img src="./images/prioritization_project_image_staging_tab"
+
+
+There can also be sheets designed to show the work for a single person (other than self or team). For example, Analyst 1 might be working on 4 projects across 3 different products. If all of their work items are marked with the Flag '1' (or any other symbol) in the designated field (e.g. 'delegate'), they can be populated in their own individual list for viewing.
+
+Example: Analyst 1
+<img src="./images/prioritization_project_image_analyst_1"
+
+Example: Analyst 2
+<img src="./images/prioritization_project_image_analyst_2" 
+
+As many or as few of these lists can be created as needed. They should all follow the same template, but will all need to be configured via Power Query automation to appear downstream from the work for each product (which is the source of truth). 
+
+Please note that users should NOT edit the work items in the Priority/Staging lists, as the list of work items within each Product sheet is the real source of truth, whereas Priority/Staging lists are compilations from those lists, and this must be maintained for the prioritization system's structural integrity.
 
 
         
-### New Configurations		
+### Setting Up New Configurations
 
 Two types of Power Query configurations used here. The first (and simpler) kind opens a connection to an existing table so that it can be used in the second type, which appends multiple tables together via their connections and then filters the list for a specific flag.
 
@@ -61,7 +88,7 @@ While the Worksheets should mostly stay the same across instances, column widths
 For best practice, Lock the priority worksheets to ensure that only the source is edited. 		
 
         
-### How to Use		
+### How to Use (50,000 foot view) 
 
 • Configure the People and Products whose work items will be tracked in the list over time
 
