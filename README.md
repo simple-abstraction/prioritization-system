@@ -5,39 +5,39 @@
 This workbook has been built and configured so that it can be easily downloaded, customized, and launched for any given team or workplace environment where there are projects to manage across both people and products. 		
 
 Example: Product Template 
-<img src="./images/prioritization_project_image_product_xyz_template"
+<img src="./images/prioritization_project_image_product_xyz_template.png"
 
         
 ### Structure & Guidelines		
 
 Each product has its own worksheet with associated work items (e.g. Product A, Product B, Product C). All new product worksheets should be copied from the Product Template to maintain structure and formatting. 
 
-Example: Product A
-<img src="./images/prioritization_project_image_product_A"
+Example: Product A (Core Platform)
+<img src="./images/prioritization_project_image_product_A.png"
 
-Example: Product B
-<img src="./images/prioritization_project_image_product_B"
+Example: Product B (Internal Tool)
+<img src="./images/prioritization_project_image_product_B.png"
 
-Example: Product C
-<img src="./images/prioritization_project_image_product_C"
+Example: Product C (AI Chatbot)
+<img src="./images/prioritization_project_image_product_C.png"
 
 
 In addition to each Product's home sheet, there are also multiple Priority/Staging sheets that can be configured. These lists are downstream from the Product lists and show filtered compilations of work items, which for example could be marked as a Priority or assigned to a specific person. These sheets are governed by power query automations that reference specific flags on work items across all of the Product sheets.
 
-Example: Top Priorities (!)
-<img src="./images/prioritization_project_image_top_priorities_tab"
+Example: Top Priorities (Flag = !)
+<img src="./images/prioritization_project_image_top_priorities_tab.png"
 
-Example: Staging (.)
-<img src="./images/prioritization_project_image_staging_tab"
+Example: Staging (Flag = .)
+<img src="./images/prioritization_project_image_staging_tab.png"
 
 
 There can also be sheets designed to show the work for a single person (other than self or team). For example, Analyst 1 might be working on 4 projects across 3 different products. If all of their work items are marked with the Flag '1' (or any other symbol) in the designated field (e.g. 'delegate'), they can be populated in their own individual list for viewing.
 
 Example: Analyst 1
-<img src="./images/prioritization_project_image_analyst_1"
+<img src="./images/prioritization_project_image_analyst_1.png"
 
 Example: Analyst 2
-<img src="./images/prioritization_project_image_analyst_2" 
+<img src="./images/prioritization_project_image_analyst_2.png" 
 
 As many or as few of these lists can be created as needed. They should all follow the same template, but will all need to be configured via Power Query automation to appear downstream from the work for each product (which is the source of truth). 
 
@@ -95,5 +95,7 @@ For best practice, Lock the priority worksheets to ensure that only the source i
 • Revisit the list as needed to make updates. Refresh the data by going to Data > Refresh All 
 
 
+### Summary
 
+This is a macro-enabled Excel workbook that can allow one to manage a workload across different dimensions such as different products, people, and priority levels in a workplace environment, especially where existing tooling is limited and structured documentation over time is necessary.
 
